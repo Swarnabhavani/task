@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admission Enquiry Details</h1>
+    </header>
+    
+    <section id="details">
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Age:</strong> <span id="displayAge"></span></p>
+        <p><strong>Education Background:</strong> <span id="displayEducation"></span></p>
+        <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        <p><strong>Phone Number:</strong> <span id="displayPhone"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    </section>
+
+    <footer>
+        <p>Thank you for your interest in our Institute!</p>
+    </footer>
+
+    <script id=" col">
+        // Retrieve data from local storage and display it
+        document.getElementById('displayName').textContent = localStorage.getItem('name');
+        document.getElementById('displayAge').textContent = localStorage.getItem('age');
+        document.getElementById('displayEducation').textContent = localStorage.getItem('education');
+        document.getElementById('displayGender').textContent = localStorage.getItem('gender');
+        document.getElementById('displayAddress').textContent = localStorage.getItem('address');
+        document.getElementById('displayPhone').textContent = localStorage.getItem('phone');
+        document.getElementById('displayEmail').textContent = localStorage.getItem('email');
+    </script>
+</body>
+</html>
